@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## After Cloning this repo
 
-1. Then open the folder in Visual Studio Code editor and check your computer
+1. Open this project folder in Visual Studio Code editor and check your computer
    node js version.
 2. Then write yarn press Enter
 
