@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+import axios from "axios";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Fetching Article List", () => {
+  it("Fetching Article List", async () => {
+    const response = await axios.get(
+      "https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=TqzYufLatOE910IxYwg36sWZ2SrgqkKC"
+    );
+    let articles = response.data.results;
+    // console.log(articles);
+    expect(articles.length).toEqual(20);
+  });
 });
