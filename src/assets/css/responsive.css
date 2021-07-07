@@ -1,0 +1,28 @@
+@media (max-width: 1400px) {}
+
+@media (max-width: 1199px) {}
+
+
+@media (max-width: 991px) {
+
+    .article-child {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+
+@media (max-width: 676px) {}
+
+@media (max-width: 576px) {
+    .article-child {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-nav .container a {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 450px) {}
