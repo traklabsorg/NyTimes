@@ -160,6 +160,9 @@
 }
 
 .one-article-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
 }
@@ -167,6 +170,11 @@
 .one-article-image-container img {
     width: 100%;
     height: auto;
+}
+
+.article-gif-main{
+    width: 50px;
+    height: 50px;
 }
 
 .one-article-date-container{
